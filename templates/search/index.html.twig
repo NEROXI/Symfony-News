@@ -1,0 +1,18 @@
+
+
+{{ form_start(form) }}
+    <div class="card my-4">
+        <h5 class="card-header">Search</h5>
+        <div class="card-body">
+        <div class="input-group">
+            <!--input type="text" name="text" class="form-control" placeholder="Search for..."-->
+            {{ form_row(form.text,  {'label':false, 'attr': {'class': 'form-control'}}) }}
+            <span class="input-group-append">
+            <!--button class="btn btn-secondary" type="submit">Go!</button-->
+            {{ form_row(form.save, { 'label': 'Go' }) }}
+            </span>
+        </div>
+        </div>
+    </div>
+{{ form_end(form) }}
+
